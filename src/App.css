@@ -9,7 +9,7 @@ body{
 }
 a{
     color: unset;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* some utility classes */
