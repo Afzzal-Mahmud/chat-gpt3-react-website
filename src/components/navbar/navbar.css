@@ -1,0 +1,163 @@
+.gpt3__navbar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+   padding: 2rem 6rem;
+}
+
+.gpt3__navbar-logo img{
+    width: 62px;
+    height: 16px;
+}
+
+.gpt3__navbar-links_container{
+   display: flex; 
+}
+
+/* all navigation links for desktop */
+.gpt3__navbar-links{
+    display: flex;
+    margin-top: 0.4rem;
+    margin-right: 4rem;
+}
+
+/* same basic style added for desktop and mobile navigation links */
+
+.gpt3__navbar-links a,
+.gpt3__navbar-mobile_links a{
+    color: var(--color-text-link);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.gpt3__navbar-links_button{
+    display: flex;
+    align-items: center;
+}
+
+/* same style for signIn and logIn/signUp button in Desktop and mobile */
+.gpt3__navbar-links_button a,
+.gpt3__navbar-links_button button,
+
+.gpt3__navbar-mobile_buttons a,
+.gpt3__navbar-mobile_buttons button{
+    color: var(--color-text-link);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.gpt3__navbar-links_button a,
+.gpt3__navbar-mobile_buttons a{
+    text-decoration: underline !important;
+    text-decoration-color: var(--color-text-link) !important;
+}
+
+.gpt3__navbar-links_button button,
+.gpt3__navbar-mobile_buttons button{
+    padding: 0.5rem 1rem;
+    line-height: 25px;
+    border-radius: 3px;
+    margin-left: 1rem; 
+    
+    background: var(--color-bg-button);
+    outline: 1px var(--color-bg-button);
+    border: 1px var(--color-bg-button);
+}
+
+.gpt3__navbar-mobile_container{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    
+    background: var(--color-footer);
+    position: absolute !important;
+    padding: 2rem;
+    top: 80px;
+    right: 5rem;
+}
+
+/* navigation links such as home,library */
+.gpt3__navbar-mobile_links{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.gpt3__navbar-mobile_buttons button{
+    margin-top: 0.6em;
+}
+
+/* initial mobile menu hidden which revile in 1080px */
+.gpt3__navbar-mobile_menu{
+    display: none;
+}
+
+/* responsive design */
+@media screen and (max-width: 1080px) {
+    .gpt3__navbar{
+        padding: 2rem 5rem;
+    }
+    .gpt3__navbar-links_container{
+        padding-left: 50%;
+    }
+    /* desktop navigation hidden */
+    .gpt3__navbar-links{
+        display: none;
+    }
+
+    .gpt3__navbar-mobile_menu{
+        display: block;
+    }
+
+    /* mobile menu button are going to be hidden because there is still room for visualize the buttons of signIn and logIn */
+    .gpt3__navbar-mobile_buttons{
+        display: none;
+    }
+
+}
+
+/* for tablate */
+@media screen and (max-width:800px) {
+    .gpt3__navbar{
+        padding: 2rem 4rem;
+    }
+
+    .gpt3__navbar-mobile_container{
+        right: 4rem;
+    }
+
+    .gpt3__navbar-links_container{
+        padding-left: 30%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .gpt3__navbar{
+        padding: 2rem;
+    }
+
+    .gpt3__navbar-mobile_container{
+        right: 2rem;
+    }
+
+    .gpt3__navbar-links_container{
+        display: none;
+    }
+
+    /* re-introducing the mobile navigation buttons */
+    .gpt3__navbar-mobile_buttons{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+}
