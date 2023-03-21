@@ -101,6 +101,9 @@
 .gpt3__navbar-mobile_menu{
     display: none;
 }
+.gpt3__navbar-mobile_menu svg{
+    cursor: pointer;
+}
 
 /* responsive design */
 @media screen and (max-width: 1080px) {
