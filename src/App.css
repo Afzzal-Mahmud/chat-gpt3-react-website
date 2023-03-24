@@ -45,6 +45,9 @@ a{
 .section__margin{
     margin: 4rem 6rem;
 }
+.section__special-case_padding{
+    padding: 4rem 6rem;
+}
 
 @media screen and (max-width:700px) {
     .section__padding{
@@ -52,6 +55,9 @@ a{
     }
     .section__margin{
         margin: 4rem;
+    }
+    .section__special-case_padding{
+        padding: 3rem;
     }
 }
 
@@ -61,6 +67,9 @@ a{
     }
     .section__margin{
         margin: 4rem 2rem;
+    }
+    .section__special-case_padding{
+        padding: 3rem 1rem;
     }
 }
 /* animation from animista.net */
