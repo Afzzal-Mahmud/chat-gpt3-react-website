@@ -1,0 +1,25 @@
+.gpt3__brand-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem 15%;
+}
+.gpt3__brand-container > *{
+    flex: 1 1 120px;
+}
+.gpt3__brand-each{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+    cursor: pointer;
+}
+.gpt3__brand-each svg{
+    margin-right: 1rem;
+    color: #8BAEAA;
+}
+.gpt3__brand-each p{
+    font-family: var(--font-family);
+    color: #8BAEAA;
+    font-weight: 600;
+    font-size: 18px;
+}
