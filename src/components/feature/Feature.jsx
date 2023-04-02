@@ -1,9 +1,11 @@
 import React from 'react'
 import './feature.css'
 
-const feature = () => {
+const feature = ({heading}) => {
   return (
-    <div>feature</div>
+     
+    <span id='feature__heading-speacial'><h1>{heading}</h1></span>
+    
   )
 }
 
