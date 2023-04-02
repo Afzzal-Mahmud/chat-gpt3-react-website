@@ -95,7 +95,10 @@
     .gpt3__header-content_people p{
         margin: 1rem 0;
     }
-    .gpt3__header-content h1,p{
+    .gpt3__header-content h1{
+        text-align: center;
+    }
+    .gpt3__header-content p{
         text-align: center;
     }
     .gpt3__header-content_input,
