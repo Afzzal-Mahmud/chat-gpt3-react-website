@@ -1,7 +1,5 @@
 .gpt3__whatgpt3 {
-    display: flex;
-    flex-direction: column;
-
+ 
     padding: 2rem;
     background: var(--color-footer);
 
@@ -22,12 +20,76 @@
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+.gpt3__whatgpt3_top-content{
+    display: flex;
+    justify-content: flex-start;
+}
+.gpt3__whatgpt3_top-content h1{
+    flex: 1;
+    margin-right: 3rem;
+}
+.gpt3__whatgpt3_top-content p{
+    flex: 2;
+    margin: 0.5rem 0 2rem;
+    color: var( --color-text);
+    font-family: var(--font-family)
+}
 .gpt3__whatgpt3_bottom-content_heading{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 1rem 0 3rem;
 }
 .gpt3__whatgpt3_bottom-content_heading a {
     text-decoration: underline;
     color: var(--color-text);
+}
+.gpt3__whatgpt3_bottom-content_card{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.gpt3__whatgpt3_bottom-content_card-body{
+    margin: 1rem 2rem 1rem auto;
+}
+.card__margin-top_bottom{
+    margin: 1rem;
+}
+.gpt3__whatgpt3_bottom-content_card-body p{
+    margin-top: 1.5rem;
+    color: var( --color-text-link);
+    font-family: var(--font-family)
+}
+/* a card last children would not carry 1rem margin on right side */
+
+.gpt3__whatgpt3_bottom-content_card :nth-child(3){
+    margin: 1rem auto;
+}
+.gpt3__whatgpt3_bottom-content_card > *{
+    flex: 1 1 200px;
+}
+
+/* responsive */
+@media screen and (max-width:1080px){
+    .gpt3__whatgpt3_top-content{
+        flex-direction: column;
+    }
+    .gpt3__whatgpt3_top-content p{
+        margin-top: 1.5rem;
+    }
+    .gpt3__whatgpt3_bottom-content_heading{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+    }
+    .gpt3__whatgpt3_bottom-content_heading a{
+        margin-top: 1rem;
+    }
+}
+
+/* mobile responsive */
+@media screen and (max-width:500px) {
+    .gpt3__whatgpt3_bottom-content_card-body{
+        margin: 1rem 0;
+    }
 }
