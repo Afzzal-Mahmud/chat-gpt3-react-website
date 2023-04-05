@@ -1,0 +1,19 @@
+.gpt3__features{
+    display: flex;
+    justify-content: space-between;
+}
+.gpt3__features-heading h1 {
+    max-width: 530px;
+}
+.gpt3__features-container_card{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.gpt3__features-container_card h1{
+    max-width: 345px;
+}
+.gpt3__features-container_card p{
+    max-width: 375px;
+}
