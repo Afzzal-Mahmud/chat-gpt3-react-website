@@ -1,0 +1,16 @@
+.gpt3__features-container_card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.gpt3__features-container_card h1{
+    max-width: 345px;
+}
+.gpt3__features-container_card p{
+    max-width: 375px;
+    font-family: var(--font-family);
+    margin-top: 1em;
+    color: aliceblue;
+}
